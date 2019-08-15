@@ -57,3 +57,29 @@ body, html {
         height: 100%; 
     }
 }
+
+.section {
+    &.product-section,
+    &.why-section {
+        height: 100vh;
+    }
+
+    &.about-section {
+        padding: 3rem 0;
+        .img-wrapper {
+            margin-top: -50px;
+            position: absolute;
+            padding: 0 3rem;
+        }
+    }
+} 
+
+.img-maps-wrapper {
+    margin-top: -100px;
+    position: absolute;
+    padding: 0 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}

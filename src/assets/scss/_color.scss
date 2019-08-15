@@ -1,0 +1,64 @@
+$color-primary: #23AD7B;
+$color-primary-hover: #23a072;
+$color-secondary: #FFCC63;
+$color-secondary-hover: #f2be57;
+
+.bg--green {
+    background-color: $color-primary;
+}
+
+.bg--green-dark {
+    background-color: #21a575;
+}
+
+.bg--yellow {
+    background-color: $color-secondary;
+}
+
+.btn--green {
+    @extend .bg--green;
+    color: #ffffff;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $color-primary-hover;
+        color: #ffffff;
+    }
+}
+
+.btn--yellow {
+    @extend .bg--yellow;
+    color: #ffffff;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $color-secondary-hover;
+        color: #ffffff;
+    }
+}
+
+.btn--green-border {
+    border: solid 1px $color-primary;
+    color: $color-primary;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $color-primary;
+        color: #ffffff;
+    }
+}
+
+.btn--yellow-border {
+    border: solid 1px $color-secondary;
+    color: $color-secondary;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $color-secondary-hover;
+        color: #ffffff;
+    }
+}
